@@ -1,4 +1,4 @@
-package ex01.entities;
+package ex02.entities;
 
 public class Product implements Comparable<Product> {
 	private String name;
@@ -34,4 +34,5 @@ public class Product implements Comparable<Product> {
 	public int compareTo(Product other) {
 		return price.compareTo(other.getPrice());
 	}
+
 }
