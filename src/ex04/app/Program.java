@@ -53,7 +53,7 @@ public class Program {
 		List<Rectangle> myRectangle = new ArrayList<Rectangle>();
 		myRectangle.add(new Rectangle(2.0, 5.0));
 		myRectangle.add(new Rectangle(3.0, 3.5));
-		
+
 		// Now, sending the data of Rectangle.
 		System.out.println("Total area: " + String.format("%.2f", totalArea2(myRectangle)));
 
@@ -63,6 +63,7 @@ public class Program {
 		double sum = 0;
 
 		for (Shape s : list) {
+			System.out.println("Calculating area of: " + s.getClass());
 			sum += s.area();
 		}
 
@@ -70,9 +71,19 @@ public class Program {
 	}
 
 	public static double totalArea2(List<? extends Shape> list) {
+
+		// It's not possible to add a new element in this list
+
+		// list.add(new Rectangle(3.0, 4.0));
+
+		// 'Cause a list of Rectangles is not a sub type of a list of Shapes, even
+		// though
+		// a type Rectangle is a sub type of Shape. Not the list!
+
 		double sum = 0;
 
 		for (Shape s : list) {
+			System.out.println("Calculating area of: " + s.getClass());
 			sum += s.area();
 		}
 
