@@ -11,7 +11,7 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		// Creating a list of shapes and instancing a kind of rectangle and a kind of
+		// Creating a list of shapes and instancing a kind rectangle and a kind
 		// circle
 		List<Shape> myShapes = new ArrayList<>();
 		myShapes.add(new Rectangle(3.0, 2.0));
@@ -89,4 +89,5 @@ public class Program {
 
 		return sum;
 	}
+
 }
