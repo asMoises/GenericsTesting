@@ -33,6 +33,7 @@ public class Program {
 
 		}
 		printLists(objs);
+		System.out.println("Exit!");
 		sc.close();
 	}
 
